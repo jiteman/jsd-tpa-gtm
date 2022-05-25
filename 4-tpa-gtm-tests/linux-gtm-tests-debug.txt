@@ -1,0 +1,801 @@
+[==========] Running 2134 tests from 513 test suites.
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:86: Failure
+Death test: return ::testing::internal::AssertHelper(::testing::TestPartResult::kFatalFailure, "/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc", 86, "Failed") = ::testing::Message() << "Expected failure."
+    Result: illegal return in test statement.
+ Error msg:
+[  DEATH   ] 
+[  FAILED  ] HasDeathTest.Test1 (1 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:90: Failure
+Death test: return ::testing::internal::AssertHelper(::testing::TestPartResult::kFatalFailure, "/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc", 90, "Failed") = ::testing::Message() << "Expected failure."
+    Result: illegal return in test statement.
+ Error msg:
+[  DEATH   ] 
+[  FAILED  ] HasDeathTest.Test2 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:94: Failure
+Death test: return ::testing::internal::AssertHelper(::testing::TestPartResult::kFatalFailure, "/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc", 94, "Failed") = ::testing::Message() << "Expected failure."
+    Result: illegal return in test statement.
+ Error msg:
+[  DEATH   ] 
+[  FAILED  ] HasDeathTest.Test3 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:98: Failure
+Death test: return ::testing::internal::AssertHelper(::testing::TestPartResult::kFatalFailure, "/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc", 98, "Failed") = ::testing::Message() << "Expected failure."
+    Result: illegal return in test statement.
+ Error msg:
+[  DEATH   ] 
+[  FAILED  ] HasDeathTest.Test4 (0 ms)
+WARNING: The value of environment variable GTEST_VAR is expected to be a 32-bit integer, but actually has value "xxx".
+WARNING: The value of environment variable GTEST_VAR is expected to be a 32-bit integer, but actually has value 1234567891234567891234, which overflows.
+Invalid environment variables: we require 0 <= GTEST_SHARD_INDEX < GTEST_TOTAL_SHARDS, but you have GTEST_SHARD_INDEX=4, GTEST_TOTAL_SHARDS=4.
+Invalid environment variables: we require 0 <= GTEST_SHARD_INDEX < GTEST_TOTAL_SHARDS, but you have GTEST_SHARD_INDEX=4, GTEST_TOTAL_SHARDS=-2.
+Invalid environment variables: you have GTEST_SHARD_INDEX = 5, but have left GTEST_TOTAL_SHARDS unset.
+Invalid environment variables: you have GTEST_TOTAL_SHARDS = 5, but have left GTEST_SHARD_INDEX unset.
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googlemock/test/gmock-internal-utils_test.cc:455: Failure
+Value of: log
+Expected: has substring "\nGMOCK WARNING:\nTest log.\nStack trace:\n100::"
+  Actual: ""
+Stack trace:
+100::2
+
+unknown file: Failure
+C++ exception with description "basic_string::substr: __pos (which is 44) > this->size() (which is 0)" thrown in the test body.
+[  FAILED  ] LogTest.NoSkippingStackFrameInOptMode (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite FloatTest,
+you defined test FloatEqApproximatelyMatchesFloats and test Size
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+Stack trace:
+100::2
+
+[  FAILED  ] FloatTest.Size (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite FloatTest,
+you defined test FloatEqApproximatelyMatchesFloats and test Zeros
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+Stack trace:
+100::2
+
+[  FAILED  ] FloatTest.Zeros (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite FloatTest,
+you defined test FloatEqApproximatelyMatchesFloats and test AlmostZeros
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+Stack trace:
+100::2
+
+[  FAILED  ] FloatTest.AlmostZeros (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite FloatTest,
+you defined test FloatEqApproximatelyMatchesFloats and test SmallDiff
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+Stack trace:
+100::2
+
+[  FAILED  ] FloatTest.SmallDiff (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite FloatTest,
+you defined test FloatEqApproximatelyMatchesFloats and test LargeDiff
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+Stack trace:
+100::2
+
+[  FAILED  ] FloatTest.LargeDiff (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite FloatTest,
+you defined test FloatEqApproximatelyMatchesFloats and test Infinity
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+Stack trace:
+100::2
+
+[  FAILED  ] FloatTest.Infinity (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite FloatTest,
+you defined test FloatEqApproximatelyMatchesFloats and test NaN
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+Stack trace:
+100::2
+
+[  FAILED  ] FloatTest.NaN (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite FloatTest,
+you defined test FloatEqApproximatelyMatchesFloats and test Reflexive
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+Stack trace:
+100::2
+
+[  FAILED  ] FloatTest.Reflexive (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite FloatTest,
+you defined test FloatEqApproximatelyMatchesFloats and test Commutative
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+Stack trace:
+100::2
+
+[  FAILED  ] FloatTest.Commutative (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite FloatTest,
+you defined test FloatEqApproximatelyMatchesFloats and test EXPECT_NEAR
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+Stack trace:
+100::2
+
+[  FAILED  ] FloatTest.EXPECT_NEAR (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite FloatTest,
+you defined test FloatEqApproximatelyMatchesFloats and test ASSERT_NEAR
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+Stack trace:
+100::2
+
+[  FAILED  ] FloatTest.ASSERT_NEAR (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite FloatTest,
+you defined test FloatEqApproximatelyMatchesFloats and test FloatLESucceeds
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+Stack trace:
+100::2
+
+[  FAILED  ] FloatTest.FloatLESucceeds (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite FloatTest,
+you defined test FloatEqApproximatelyMatchesFloats and test FloatLEFails
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+Stack trace:
+100::2
+
+[  FAILED  ] FloatTest.FloatLEFails (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite DoubleTest,
+you defined test DoubleEqApproximatelyMatchesDoubles and test Size
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+Stack trace:
+100::2
+
+[  FAILED  ] DoubleTest.Size (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite DoubleTest,
+you defined test DoubleEqApproximatelyMatchesDoubles and test Zeros
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+Stack trace:
+100::2
+
+[  FAILED  ] DoubleTest.Zeros (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite DoubleTest,
+you defined test DoubleEqApproximatelyMatchesDoubles and test AlmostZeros
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+Stack trace:
+100::2
+
+[  FAILED  ] DoubleTest.AlmostZeros (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite DoubleTest,
+you defined test DoubleEqApproximatelyMatchesDoubles and test SmallDiff
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+Stack trace:
+100::2
+
+[  FAILED  ] DoubleTest.SmallDiff (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite DoubleTest,
+you defined test DoubleEqApproximatelyMatchesDoubles and test LargeDiff
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+Stack trace:
+100::2
+
+[  FAILED  ] DoubleTest.LargeDiff (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite DoubleTest,
+you defined test DoubleEqApproximatelyMatchesDoubles and test Infinity
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+Stack trace:
+100::2
+
+[  FAILED  ] DoubleTest.Infinity (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite DoubleTest,
+you defined test DoubleEqApproximatelyMatchesDoubles and test NaN
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+Stack trace:
+100::2
+
+[  FAILED  ] DoubleTest.NaN (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite DoubleTest,
+you defined test DoubleEqApproximatelyMatchesDoubles and test Reflexive
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+Stack trace:
+100::2
+
+[  FAILED  ] DoubleTest.Reflexive (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite DoubleTest,
+you defined test DoubleEqApproximatelyMatchesDoubles and test Commutative
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+Stack trace:
+100::2
+
+[  FAILED  ] DoubleTest.Commutative (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite DoubleTest,
+you defined test DoubleEqApproximatelyMatchesDoubles and test EXPECT_NEAR
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+Stack trace:
+100::2
+
+[  FAILED  ] DoubleTest.EXPECT_NEAR (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite DoubleTest,
+you defined test DoubleEqApproximatelyMatchesDoubles and test ASSERT_NEAR
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+Stack trace:
+100::2
+
+[  FAILED  ] DoubleTest.ASSERT_NEAR (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite DoubleTest,
+you defined test DoubleEqApproximatelyMatchesDoubles and test DoubleLESucceeds
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+Stack trace:
+100::2
+
+[  FAILED  ] DoubleTest.DoubleLESucceeds (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite DoubleTest,
+you defined test DoubleEqApproximatelyMatchesDoubles and test DoubleLEFails
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+Stack trace:
+100::2
+
+[  FAILED  ] DoubleTest.DoubleLEFails (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:49: Failure
+Failed
+Expected failure.
+Stack trace:
+100::2
+
+[  FAILED  ] HasFixtureTest.Test1 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:51: Failure
+Failed
+Expected failure.
+Stack trace:
+100::2
+
+[  FAILED  ] HasFixtureTest.Test2 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:53: Failure
+Failed
+Expected failure.
+Stack trace:
+100::2
+
+[  FAILED  ] HasFixtureTest.Test3 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:55: Failure
+Failed
+Expected failure.
+Stack trace:
+100::2
+
+[  FAILED  ] HasFixtureTest.Test4 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:61: Failure
+Failed
+Expected failure.
+Stack trace:
+100::2
+
+[  FAILED  ] HasSimpleTest.Test1 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:63: Failure
+Failed
+Expected failure.
+Stack trace:
+100::2
+
+[  FAILED  ] HasSimpleTest.Test2 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:65: Failure
+Failed
+Expected failure.
+Stack trace:
+100::2
+
+[  FAILED  ] HasSimpleTest.Test3 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:67: Failure
+Failed
+Expected failure.
+Stack trace:
+100::2
+
+[  FAILED  ] HasSimpleTest.Test4 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:75: Failure
+Failed
+Expected failure.
+Stack trace:
+100::2
+
+[  FAILED  ] HasDisabledTest.Test2 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:77: Failure
+Failed
+Expected failure.
+Stack trace:
+100::2
+
+[  FAILED  ] HasDisabledTest.Test3 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:79: Failure
+Failed
+Expected failure.
+Stack trace:
+100::2
+
+[  FAILED  ] HasDisabledTest.Test4 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:152: Skipped
+Expected skip.
+Stack trace:
+100::2
+
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:154: Failure
+Failed
+Expected failure.
+Stack trace:
+100::2
+
+[  FAILED  ] HasSkipTest.Test2 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:156: Failure
+Failed
+Expected failure.
+Stack trace:
+100::2
+
+[  FAILED  ] HasSkipTest.Test3 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:158: Failure
+Failed
+Expected failure.
+Stack trace:
+100::2
+
+[  FAILED  ] HasSkipTest.Test4 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-options-test.cc:121: Failure
+Failed
+GetCurrentExecutableName() returns jsd-tpa-gtm-tests
+Stack trace:
+100::2
+
+[  FAILED  ] OutputFileHelpersTest.GetCurrentExecutableName (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-setuptestsuite-test_.cc:34: Failure
+Expected equality of these values:
+  ""
+    Which is: 0x7f1ba7830f60
+  "SET_UP_FAIL"
+    Which is: 0x7f1ba7830fcc
+Stack trace:
+100::2
+
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-setuptestsuite-test_.cc:37: Skipped
+
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-setuptestsuite-test_.cc:41: Failure
+Expected equality of these values:
+  ""
+    Which is: 0x7f1ba7830f60
+  "TEAR_DOWN_FAIL"
+    Which is: 0x7f1ba78310a6
+Stack trace:
+100::2
+
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_help_test_.cc:39: Failure
+Value of: false
+  Actual: false
+Expected: true
+Tests shouldn't be run when --help is specified.
+Stack trace:
+100::2
+
+[  FAILED  ] HelpFlagTest.ShouldNotBeRun (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_skip_test.cc:38: Skipped
+skipping single test
+Stack trace:
+100::2
+
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_skip_test.cc:45: Skipped
+skipping all tests for this fixture
+Stack trace:
+100::2
+
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_skip_test.cc:45: Skipped
+skipping all tests for this fixture
+Stack trace:
+100::2
+
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2498: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class, so mixing TEST_F and TEST in the same test suite is
+illegal.  In test suite NoFatalFailureTest,
+test NoFailure is defined using TEST_F but
+test ExpectNoFatalFailure is defined using TEST.  You probably
+want to change the TEST to TEST_F or move it to another test
+case.
+Stack trace:
+100::2
+
+[  FAILED  ] NoFatalFailureTest.NoFailure (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2498: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class, so mixing TEST_F and TEST in the same test suite is
+illegal.  In test suite NoFatalFailureTest,
+test NonFatalIsNoFailure is defined using TEST_F but
+test ExpectNoFatalFailure is defined using TEST.  You probably
+want to change the TEST to TEST_F or move it to another test
+case.
+Stack trace:
+100::2
+
+[  FAILED  ] NoFatalFailureTest.NonFatalIsNoFailure (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2498: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class, so mixing TEST_F and TEST in the same test suite is
+illegal.  In test suite NoFatalFailureTest,
+test AssertNoFatalFailureOnFatalFailure is defined using TEST_F but
+test ExpectNoFatalFailure is defined using TEST.  You probably
+want to change the TEST to TEST_F or move it to another test
+case.
+Stack trace:
+100::2
+
+[  FAILED  ] NoFatalFailureTest.AssertNoFatalFailureOnFatalFailure (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2498: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class, so mixing TEST_F and TEST in the same test suite is
+illegal.  In test suite NoFatalFailureTest,
+test ExpectNoFatalFailureOnFatalFailure is defined using TEST_F but
+test ExpectNoFatalFailure is defined using TEST.  You probably
+want to change the TEST to TEST_F or move it to another test
+case.
+Stack trace:
+100::2
+
+[  FAILED  ] NoFatalFailureTest.ExpectNoFatalFailureOnFatalFailure (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2498: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class, so mixing TEST_F and TEST in the same test suite is
+illegal.  In test suite NoFatalFailureTest,
+test MessageIsStreamable is defined using TEST_F but
+test ExpectNoFatalFailure is defined using TEST.  You probably
+want to change the TEST to TEST_F or move it to another test
+case.
+Stack trace:
+100::2
+
+[  FAILED  ] NoFatalFailureTest.MessageIsStreamable (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_testbridge_test_.cc:41: Failure
+Value of: false
+  Actual: false
+Expected: true
+This test should never be run.
+Stack trace:
+100::2
+
+[  FAILED  ] TestFilterTest.TestThatFails (0 ms)
+(expecting 2 warnings)
+WARNING: Environment variable GTEST_TEMP is expected to be a 32-bit integer, but actually has value 12345678987654321, which overflows.
+The default value 20 is used.
+WARNING: Environment variable GTEST_TEMP is expected to be a 32-bit integer, but actually has value -12345678987654321, which overflows.
+The default value 30 is used.
+(expecting 2 warnings)
+WARNING: Environment variable GTEST_TEMP is expected to be a 32-bit integer, but actually has value "A1".
+The default value 40 is used.
+WARNING: Environment variable GTEST_TEMP is expected to be a 32-bit integer, but actually has value "12X".
+The default value 50 is used.
+(expecting 2 warnings)
+(expecting 2 warnings)
+Setting up the test case . . .
+Tearing down the test case . . .
+Setting up the test suite . . .
+Tearing down the test suite . . .
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_unittest.cc:6699: Failure
+Failed
+Stack trace:
+100::2
+
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_unittest.cc:6709: Failure
+Failed
+Stack trace:
+100::2
+
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_unittest.cc:6699: Failure
+Failed
+Stack trace:
+100::2
+
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_unittest.cc:6717: Failure
+Failed
+Stack trace:
+100::2
+
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_unittest.cc:6733: Failure
+Failed
+Stack trace:
+100::2
+
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_unittest.cc:6699: Failure
+Failed
+Stack trace:
+100::2
+
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_unittest.cc:6751: Failure
+Failed
+Stack trace:
+100::2
+
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_unittest.cc:6699: Failure
+Failed
+Stack trace:
+100::2
+
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_unittest.cc:6759: Failure
+Failed
+Stack trace:
+100::2
+
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_unittest.cc:6773: Failure
+Failed
+Stack trace:
+100::2
+
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:117: Failure
+Failed
+Expected failure.
+Stack trace:
+100::2
+
+[  FAILED  ] HasParametersSuite/HasParametersTest.Test1/0, where GetParam() = 1 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:117: Failure
+Failed
+Expected failure.
+Stack trace:
+100::2
+
+[  FAILED  ] HasParametersSuite/HasParametersTest.Test1/1, where GetParam() = 2 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:119: Failure
+Failed
+Expected failure.
+Stack trace:
+100::2
+
+[  FAILED  ] HasParametersSuite/HasParametersTest.Test2/0, where GetParam() = 1 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:119: Failure
+Failed
+Expected failure.
+Stack trace:
+100::2
+
+[  FAILED  ] HasParametersSuite/HasParametersTest.Test2/1, where GetParam() = 2 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-param-test2-test.cc:49: Failure
+Parameterized test suite ExternalInstantiationTest is instantiated via INSTANTIATE_TEST_SUITE_P, but no tests are defined via TEST_P . No test cases will run.
+
+Ideally, INSTANTIATE_TEST_SUITE_P should only ever be invoked from code that always depend on code that provides TEST_P. Failing to do so is often an indication of dead code, e.g. the last TEST_P was removed but the rest got left behind.
+
+To suppress this error for this test suite, insert the following line (in a non-header) in the namespace it is defined in:
+
+GTEST_ALLOW_UNINSTANTIATED_PARAMETERIZED_TEST(ExternalInstantiationTest);
+Stack trace:
+100::2
+
+[  FAILED  ] GoogleTestVerification.UninstantiatedParameterizedTestSuite<ExternalInstantiationTest> (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-param-test2-test.cc:57: Failure
+Parameterized test suite InstantiationInMultipleTranslationUnitsTest is instantiated via INSTANTIATE_TEST_SUITE_P, but no tests are defined via TEST_P . No test cases will run.
+
+Ideally, INSTANTIATE_TEST_SUITE_P should only ever be invoked from code that always depend on code that provides TEST_P. Failing to do so is often an indication of dead code, e.g. the last TEST_P was removed but the rest got left behind.
+
+To suppress this error for this test suite, insert the following line (in a non-header) in the namespace it is defined in:
+
+GTEST_ALLOW_UNINSTANTIATED_PARAMETERIZED_TEST(InstantiationInMultipleTranslationUnitsTest);
+Stack trace:
+100::2
+
+[  FAILED  ] GoogleTestVerification.UninstantiatedParameterizedTestSuite<InstantiationInMultipleTranslationUnitsTest> (0 ms)
+[==========] 2134 tests from 513 test suites ran. (7389 ms total)
+[  PASSED  ] 2070 tests.
+[  SKIPPED ] 5 tests, listed below:
+[  SKIPPED ] HasSkipTest.Test1
+[  SKIPPED ] SetupFailTest.NoopPassingTest
+[  SKIPPED ] SkipTest.DoesSkip
+[  SKIPPED ] Fixture.SkipsOneTest
+[  SKIPPED ] Fixture.SkipsAnotherTest
+[  FAILED  ] 59 tests, listed below:
+[  FAILED  ] HasDeathTest.Test1
+[  FAILED  ] HasDeathTest.Test2
+[  FAILED  ] HasDeathTest.Test3
+[  FAILED  ] HasDeathTest.Test4
+[  FAILED  ] LogTest.NoSkippingStackFrameInOptMode
+[  FAILED  ] FloatTest.Size
+[  FAILED  ] FloatTest.Zeros
+[  FAILED  ] FloatTest.AlmostZeros
+[  FAILED  ] FloatTest.SmallDiff
+[  FAILED  ] FloatTest.LargeDiff
+[  FAILED  ] FloatTest.Infinity
+[  FAILED  ] FloatTest.NaN
+[  FAILED  ] FloatTest.Reflexive
+[  FAILED  ] FloatTest.Commutative
+[  FAILED  ] FloatTest.EXPECT_NEAR
+[  FAILED  ] FloatTest.ASSERT_NEAR
+[  FAILED  ] FloatTest.FloatLESucceeds
+[  FAILED  ] FloatTest.FloatLEFails
+[  FAILED  ] DoubleTest.Size
+[  FAILED  ] DoubleTest.Zeros
+[  FAILED  ] DoubleTest.AlmostZeros
+[  FAILED  ] DoubleTest.SmallDiff
+[  FAILED  ] DoubleTest.LargeDiff
+[  FAILED  ] DoubleTest.Infinity
+[  FAILED  ] DoubleTest.NaN
+[  FAILED  ] DoubleTest.Reflexive
+[  FAILED  ] DoubleTest.Commutative
+[  FAILED  ] DoubleTest.EXPECT_NEAR
+[  FAILED  ] DoubleTest.ASSERT_NEAR
+[  FAILED  ] DoubleTest.DoubleLESucceeds
+[  FAILED  ] DoubleTest.DoubleLEFails
+[  FAILED  ] HasFixtureTest.Test1
+[  FAILED  ] HasFixtureTest.Test2
+[  FAILED  ] HasFixtureTest.Test3
+[  FAILED  ] HasFixtureTest.Test4
+[  FAILED  ] HasSimpleTest.Test1
+[  FAILED  ] HasSimpleTest.Test2
+[  FAILED  ] HasSimpleTest.Test3
+[  FAILED  ] HasSimpleTest.Test4
+[  FAILED  ] HasDisabledTest.Test2
+[  FAILED  ] HasDisabledTest.Test3
+[  FAILED  ] HasDisabledTest.Test4
+[  FAILED  ] HasSkipTest.Test2
+[  FAILED  ] HasSkipTest.Test3
+[  FAILED  ] HasSkipTest.Test4
+[  FAILED  ] OutputFileHelpersTest.GetCurrentExecutableName
+[  FAILED  ] HelpFlagTest.ShouldNotBeRun
+[  FAILED  ] NoFatalFailureTest.NoFailure
+[  FAILED  ] NoFatalFailureTest.NonFatalIsNoFailure
+[  FAILED  ] NoFatalFailureTest.AssertNoFatalFailureOnFatalFailure
+[  FAILED  ] NoFatalFailureTest.ExpectNoFatalFailureOnFatalFailure
+[  FAILED  ] NoFatalFailureTest.MessageIsStreamable
+[  FAILED  ] TestFilterTest.TestThatFails
+[  FAILED  ] HasParametersSuite/HasParametersTest.Test1/0, where GetParam() = 1
+[  FAILED  ] HasParametersSuite/HasParametersTest.Test1/1, where GetParam() = 2
+[  FAILED  ] HasParametersSuite/HasParametersTest.Test2/0, where GetParam() = 1
+[  FAILED  ] HasParametersSuite/HasParametersTest.Test2/1, where GetParam() = 2
+[  FAILED  ] GoogleTestVerification.UninstantiatedParameterizedTestSuite<ExternalInstantiationTest>
+[  FAILED  ] GoogleTestVerification.UninstantiatedParameterizedTestSuite<InstantiationInMultipleTranslationUnitsTest>
+
+59 FAILED TESTS
+[  FAILED  ] SetupFailTest: SetUpTestSuite or TearDownTestSuite
+[  FAILED  ] TearDownFailTest: SetUpTestSuite or TearDownTestSuite
+
+ 2 FAILED TEST SUITES
+  YOU HAVE 19 DISABLED TESTS
+

@@ -1,9 +1,9 @@
 #include "gtm_test_main.h"
 
-#include "jmsd/tpa/gtm/gtm_library_main.h"
+#include "jsd/tpa/gtm/gtm_main.h"
 
 
-namespace jmsd {
+namespace jsd {
 namespace tpa {
 namespace gtm {
 
@@ -15,4 +15,4 @@ int run_all_gtm_tests( int argc, char const *const argv[] ) {
 
 } // namespace gtm
 } // namespace tpa
-} // namespace jmsd
+} // namespace jsd

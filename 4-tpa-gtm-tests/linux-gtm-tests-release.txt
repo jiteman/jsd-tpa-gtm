@@ -1,0 +1,422 @@
+[==========] Running 2134 tests from 513 test suites.
+WARNING: The value of environment variable GTEST_VAR is expected to be a 32-bit integer, but actually has value "xxx".
+WARNING: The value of environment variable GTEST_VAR is expected to be a 32-bit integer, but actually has value 1234567891234567891234, which overflows.
+Invalid environment variables: we require 0 <= GTEST_SHARD_INDEX < GTEST_TOTAL_SHARDS, but you have GTEST_SHARD_INDEX=4, GTEST_TOTAL_SHARDS=4.
+Invalid environment variables: we require 0 <= GTEST_SHARD_INDEX < GTEST_TOTAL_SHARDS, but you have GTEST_SHARD_INDEX=4, GTEST_TOTAL_SHARDS=-2.
+Invalid environment variables: you have GTEST_SHARD_INDEX = 5, but have left GTEST_TOTAL_SHARDS unset.
+Invalid environment variables: you have GTEST_TOTAL_SHARDS = 5, but have left GTEST_SHARD_INDEX unset.
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:86: Failure
+Death test: return ::testing::internal::AssertHelper(::testing::TestPartResult::kFatalFailure, "/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc", 86, "Failed") = ::testing::Message() << "Expected failure."
+    Result: illegal return in test statement.
+ Error msg:
+[  DEATH   ] 
+[  FAILED  ] HasDeathTest.Test1 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:90: Failure
+Death test: return ::testing::internal::AssertHelper(::testing::TestPartResult::kFatalFailure, "/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc", 90, "Failed") = ::testing::Message() << "Expected failure."
+    Result: illegal return in test statement.
+ Error msg:
+[  DEATH   ] 
+[  FAILED  ] HasDeathTest.Test2 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:94: Failure
+Death test: return ::testing::internal::AssertHelper(::testing::TestPartResult::kFatalFailure, "/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc", 94, "Failed") = ::testing::Message() << "Expected failure."
+    Result: illegal return in test statement.
+ Error msg:
+[  DEATH   ] 
+[  FAILED  ] HasDeathTest.Test3 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:98: Failure
+Death test: return ::testing::internal::AssertHelper(::testing::TestPartResult::kFatalFailure, "/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc", 98, "Failed") = ::testing::Message() << "Expected failure."
+    Result: illegal return in test statement.
+ Error msg:
+[  DEATH   ] 
+[  FAILED  ] HasDeathTest.Test4 (0 ms)
+(expecting 2 warnings)
+WARNING: Environment variable GTEST_TEMP is expected to be a 32-bit integer, but actually has value 12345678987654321, which overflows.
+The default value 20 is used.
+WARNING: Environment variable GTEST_TEMP is expected to be a 32-bit integer, but actually has value -12345678987654321, which overflows.
+The default value 30 is used.
+(expecting 2 warnings)
+WARNING: Environment variable GTEST_TEMP is expected to be a 32-bit integer, but actually has value "A1".
+The default value 40 is used.
+WARNING: Environment variable GTEST_TEMP is expected to be a 32-bit integer, but actually has value "12X".
+The default value 50 is used.
+(expecting 2 warnings)
+(expecting 2 warnings)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite FloatTest,
+you defined test Size and test FloatEqApproximatelyMatchesFloats
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+[  FAILED  ] FloatTest.FloatEqApproximatelyMatchesFloats (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite FloatTest,
+you defined test Size and test NanSensitiveFloatEqApproximatelyMatchesFloats
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+[  FAILED  ] FloatTest.NanSensitiveFloatEqApproximatelyMatchesFloats (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite FloatTest,
+you defined test Size and test FloatEqCannotMatchNaN
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+[  FAILED  ] FloatTest.FloatEqCannotMatchNaN (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite FloatTest,
+you defined test Size and test NanSensitiveFloatEqCanMatchNaN
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+[  FAILED  ] FloatTest.NanSensitiveFloatEqCanMatchNaN (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite FloatTest,
+you defined test Size and test FloatEqCanDescribeSelf
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+[  FAILED  ] FloatTest.FloatEqCanDescribeSelf (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite FloatTest,
+you defined test Size and test NanSensitiveFloatEqCanDescribeSelf
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+[  FAILED  ] FloatTest.NanSensitiveFloatEqCanDescribeSelf (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite DoubleTest,
+you defined test Size and test DoubleEqApproximatelyMatchesDoubles
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+[  FAILED  ] DoubleTest.DoubleEqApproximatelyMatchesDoubles (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite DoubleTest,
+you defined test Size and test NanSensitiveDoubleEqApproximatelyMatchesDoubles
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+[  FAILED  ] DoubleTest.NanSensitiveDoubleEqApproximatelyMatchesDoubles (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite DoubleTest,
+you defined test Size and test DoubleEqCannotMatchNaN
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+[  FAILED  ] DoubleTest.DoubleEqCannotMatchNaN (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite DoubleTest,
+you defined test Size and test NanSensitiveDoubleEqCanMatchNaN
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+[  FAILED  ] DoubleTest.NanSensitiveDoubleEqCanMatchNaN (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite DoubleTest,
+you defined test Size and test DoubleEqCanDescribeSelf
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+[  FAILED  ] DoubleTest.DoubleEqCanDescribeSelf (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2510: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class.  However, in test suite DoubleTest,
+you defined test Size and test NanSensitiveDoubleEqCanDescribeSelf
+using two different test fixture classes.  This can happen if
+the two classes are from different namespaces or translation
+units and have the same name.  You should probably rename one
+of the classes to put the tests into different test suites.
+[  FAILED  ] DoubleTest.NanSensitiveDoubleEqCanDescribeSelf (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2498: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class, so mixing TEST_F and TEST in the same test suite is
+illegal.  In test suite NoFatalFailureTest,
+test NoFailure is defined using TEST_F but
+test ExpectNoFatalFailure is defined using TEST.  You probably
+want to change the TEST to TEST_F or move it to another test
+case.
+[  FAILED  ] NoFatalFailureTest.ExpectNoFatalFailure (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/src/gtest.cc:2498: Failure
+Failed
+All tests in the same test suite must use the same test fixture
+class, so mixing TEST_F and TEST in the same test suite is
+illegal.  In test suite NoFatalFailureTest,
+test NoFailure is defined using TEST_F but
+test AssertNoFatalFailure is defined using TEST.  You probably
+want to change the TEST to TEST_F or move it to another test
+case.
+[  FAILED  ] NoFatalFailureTest.AssertNoFatalFailure (0 ms)
+Setting up the test case . . .
+Tearing down the test case . . .
+Setting up the test suite . . .
+Tearing down the test suite . . .
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_unittest.cc:6699: Failure
+Failed
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_unittest.cc:6709: Failure
+Failed
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_unittest.cc:6699: Failure
+Failed
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_unittest.cc:6717: Failure
+Failed
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_unittest.cc:6733: Failure
+Failed
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_unittest.cc:6699: Failure
+Failed
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_unittest.cc:6751: Failure
+Failed
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_unittest.cc:6699: Failure
+Failed
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_unittest.cc:6759: Failure
+Failed
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_unittest.cc:6773: Failure
+Failed
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_testbridge_test_.cc:41: Failure
+Value of: false
+  Actual: false
+Expected: true
+This test should never be run.
+[  FAILED  ] TestFilterTest.TestThatFails (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_skip_test.cc:38: Skipped
+skipping single test
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_skip_test.cc:45: Skipped
+skipping all tests for this fixture
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_skip_test.cc:45: Skipped
+skipping all tests for this fixture
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/gtest_help_test_.cc:39: Failure
+Value of: false
+  Actual: false
+Expected: true
+Tests shouldn't be run when --help is specified.
+[  FAILED  ] HelpFlagTest.ShouldNotBeRun (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-setuptestsuite-test_.cc:34: Failure
+Expected equality of these values:
+  ""
+    Which is: 0x7f22fb936856
+  "SET_UP_FAIL"
+    Which is: 0x7f22fb937890
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-setuptestsuite-test_.cc:37: Skipped
+
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-setuptestsuite-test_.cc:41: Failure
+Expected equality of these values:
+  ""
+    Which is: 0x7f22fb936856
+  "TEAR_DOWN_FAIL"
+    Which is: 0x7f22fb937870
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-options-test.cc:121: Failure
+Failed
+GetCurrentExecutableName() returns jsd-tpa-gtm-tests
+[  FAILED  ] OutputFileHelpersTest.GetCurrentExecutableName (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:49: Failure
+Failed
+Expected failure.
+[  FAILED  ] HasFixtureTest.Test1 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:51: Failure
+Failed
+Expected failure.
+[  FAILED  ] HasFixtureTest.Test2 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:53: Failure
+Failed
+Expected failure.
+[  FAILED  ] HasFixtureTest.Test3 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:55: Failure
+Failed
+Expected failure.
+[  FAILED  ] HasFixtureTest.Test4 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:61: Failure
+Failed
+Expected failure.
+[  FAILED  ] HasSimpleTest.Test1 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:63: Failure
+Failed
+Expected failure.
+[  FAILED  ] HasSimpleTest.Test2 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:65: Failure
+Failed
+Expected failure.
+[  FAILED  ] HasSimpleTest.Test3 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:67: Failure
+Failed
+Expected failure.
+[  FAILED  ] HasSimpleTest.Test4 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:75: Failure
+Failed
+Expected failure.
+[  FAILED  ] HasDisabledTest.Test2 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:77: Failure
+Failed
+Expected failure.
+[  FAILED  ] HasDisabledTest.Test3 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:79: Failure
+Failed
+Expected failure.
+[  FAILED  ] HasDisabledTest.Test4 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:152: Skipped
+Expected skip.
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:154: Failure
+Failed
+Expected failure.
+[  FAILED  ] HasSkipTest.Test2 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:156: Failure
+Failed
+Expected failure.
+[  FAILED  ] HasSkipTest.Test3 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:158: Failure
+Failed
+Expected failure.
+[  FAILED  ] HasSkipTest.Test4 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googlemock/test/gmock-internal-utils_test.cc:455: Failure
+Value of: log
+Expected: has substring "\nGMOCK WARNING:\nTest log.\nStack trace:\n100::"
+  Actual: ""
+Stack trace:
+100::2
+
+unknown file: Failure
+C++ exception with description "basic_string::substr: __pos (which is 44) > this->size() (which is 0)" thrown in the test body.
+[  FAILED  ] LogTest.NoSkippingStackFrameInOptMode (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-param-test2-test.cc:49: Failure
+Parameterized test suite ExternalInstantiationTest is instantiated via INSTANTIATE_TEST_SUITE_P, but no tests are defined via TEST_P . No test cases will run.
+
+Ideally, INSTANTIATE_TEST_SUITE_P should only ever be invoked from code that always depend on code that provides TEST_P. Failing to do so is often an indication of dead code, e.g. the last TEST_P was removed but the rest got left behind.
+
+To suppress this error for this test suite, insert the following line (in a non-header) in the namespace it is defined in:
+
+GTEST_ALLOW_UNINSTANTIATED_PARAMETERIZED_TEST(ExternalInstantiationTest);
+Stack trace:
+100::2
+
+[  FAILED  ] GoogleTestVerification.UninstantiatedParameterizedTestSuite<ExternalInstantiationTest> (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-param-test2-test.cc:57: Failure
+Parameterized test suite InstantiationInMultipleTranslationUnitsTest is instantiated via INSTANTIATE_TEST_SUITE_P, but no tests are defined via TEST_P . No test cases will run.
+
+Ideally, INSTANTIATE_TEST_SUITE_P should only ever be invoked from code that always depend on code that provides TEST_P. Failing to do so is often an indication of dead code, e.g. the last TEST_P was removed but the rest got left behind.
+
+To suppress this error for this test suite, insert the following line (in a non-header) in the namespace it is defined in:
+
+GTEST_ALLOW_UNINSTANTIATED_PARAMETERIZED_TEST(InstantiationInMultipleTranslationUnitsTest);
+Stack trace:
+100::2
+
+[  FAILED  ] GoogleTestVerification.UninstantiatedParameterizedTestSuite<InstantiationInMultipleTranslationUnitsTest> (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:117: Failure
+Failed
+Expected failure.
+Stack trace:
+100::2
+
+[  FAILED  ] HasParametersSuite/HasParametersTest.Test1/0, where GetParam() = 1 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:117: Failure
+Failed
+Expected failure.
+Stack trace:
+100::2
+
+[  FAILED  ] HasParametersSuite/HasParametersTest.Test1/1, where GetParam() = 2 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:119: Failure
+Failed
+Expected failure.
+Stack trace:
+100::2
+
+[  FAILED  ] HasParametersSuite/HasParametersTest.Test2/0, where GetParam() = 1 (0 ms)
+/home/shaluhin/devg/jitemania/jitemania-solutions/2-jsd-foreign/0-tpg-autotesting/0-tpc-googletestmock/1-tpc-repository/googletest/googletest/test/googletest-failfast-unittest_.cc:119: Failure
+Failed
+Expected failure.
+Stack trace:
+100::2
+
+[  FAILED  ] HasParametersSuite/HasParametersTest.Test2/1, where GetParam() = 2 (0 ms)
+[==========] 2134 tests from 513 test suites ran. (4270 ms total)
+[  PASSED  ] 2087 tests.
+[  SKIPPED ] 5 tests, listed below:
+[  SKIPPED ] SkipTest.DoesSkip
+[  SKIPPED ] Fixture.SkipsOneTest
+[  SKIPPED ] Fixture.SkipsAnotherTest
+[  SKIPPED ] SetupFailTest.NoopPassingTest
+[  SKIPPED ] HasSkipTest.Test1
+[  FAILED  ] 42 tests, listed below:
+[  FAILED  ] HasDeathTest.Test1
+[  FAILED  ] HasDeathTest.Test2
+[  FAILED  ] HasDeathTest.Test3
+[  FAILED  ] HasDeathTest.Test4
+[  FAILED  ] FloatTest.FloatEqApproximatelyMatchesFloats
+[  FAILED  ] FloatTest.NanSensitiveFloatEqApproximatelyMatchesFloats
+[  FAILED  ] FloatTest.FloatEqCannotMatchNaN
+[  FAILED  ] FloatTest.NanSensitiveFloatEqCanMatchNaN
+[  FAILED  ] FloatTest.FloatEqCanDescribeSelf
+[  FAILED  ] FloatTest.NanSensitiveFloatEqCanDescribeSelf
+[  FAILED  ] DoubleTest.DoubleEqApproximatelyMatchesDoubles
+[  FAILED  ] DoubleTest.NanSensitiveDoubleEqApproximatelyMatchesDoubles
+[  FAILED  ] DoubleTest.DoubleEqCannotMatchNaN
+[  FAILED  ] DoubleTest.NanSensitiveDoubleEqCanMatchNaN
+[  FAILED  ] DoubleTest.DoubleEqCanDescribeSelf
+[  FAILED  ] DoubleTest.NanSensitiveDoubleEqCanDescribeSelf
+[  FAILED  ] NoFatalFailureTest.ExpectNoFatalFailure
+[  FAILED  ] NoFatalFailureTest.AssertNoFatalFailure
+[  FAILED  ] TestFilterTest.TestThatFails
+[  FAILED  ] HelpFlagTest.ShouldNotBeRun
+[  FAILED  ] OutputFileHelpersTest.GetCurrentExecutableName
+[  FAILED  ] HasFixtureTest.Test1
+[  FAILED  ] HasFixtureTest.Test2
+[  FAILED  ] HasFixtureTest.Test3
+[  FAILED  ] HasFixtureTest.Test4
+[  FAILED  ] HasSimpleTest.Test1
+[  FAILED  ] HasSimpleTest.Test2
+[  FAILED  ] HasSimpleTest.Test3
+[  FAILED  ] HasSimpleTest.Test4
+[  FAILED  ] HasDisabledTest.Test2
+[  FAILED  ] HasDisabledTest.Test3
+[  FAILED  ] HasDisabledTest.Test4
+[  FAILED  ] HasSkipTest.Test2
+[  FAILED  ] HasSkipTest.Test3
+[  FAILED  ] HasSkipTest.Test4
+[  FAILED  ] LogTest.NoSkippingStackFrameInOptMode
+[  FAILED  ] GoogleTestVerification.UninstantiatedParameterizedTestSuite<ExternalInstantiationTest>
+[  FAILED  ] GoogleTestVerification.UninstantiatedParameterizedTestSuite<InstantiationInMultipleTranslationUnitsTest>
+[  FAILED  ] HasParametersSuite/HasParametersTest.Test1/0, where GetParam() = 1
+[  FAILED  ] HasParametersSuite/HasParametersTest.Test1/1, where GetParam() = 2
+[  FAILED  ] HasParametersSuite/HasParametersTest.Test2/0, where GetParam() = 1
+[  FAILED  ] HasParametersSuite/HasParametersTest.Test2/1, where GetParam() = 2
+
+42 FAILED TESTS
+[  FAILED  ] SetupFailTest: SetUpTestSuite or TearDownTestSuite
+[  FAILED  ] TearDownFailTest: SetUpTestSuite or TearDownTestSuite
+
+ 2 FAILED TEST SUITES
+  YOU HAVE 19 DISABLED TESTS
+

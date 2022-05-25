@@ -1,37 +1,37 @@
-cmake_minimum_required( VERSION 3.7.1 )
+cmake_minimum_required( VERSION 3.16.3 )
 
-project( tpa_gtm_test_lib C CXX )
-
-
-JMSD_SHOW_PROJECT_HEADER()
+project( jsd-tpa-gtm-test-lib C CXX )
 
 
-include( ${JMSD_COMPONENT_CMAKE_SETTINGS_PATH}/tpa-gtm-test-lib-set-compiler-settings.cmake )
-set( JMSD_THIS_PROJECT_SOURCE_ROOT ${JMSD_COMPONENT_SOURCE_ROOT_PATH}/tpa_gtm_test )
+JSD_SHOW_PROJECT_HEADER()
+
+
+include( ${JSD_SSC_CMAKE_PATH}/tpa-gtm-test-lib-set-compiler-settings.cmake )
+set( JSD_THIS_PROJECT_SOURCE_PATH ${JSD_SSC_SOURCE_PATH}/tpa_gtm_test )
 
 
 ## include dependencies
 set( ${PROJECT_NAME}_DEPENDENCY_DIRS_VAR
-	${JMSD_PLATFORM_SOURCES}
-	${tpa_gtm_lib_DEPENDENCY_DIRS}
-	${JMSD_THIS_PROJECT_SOURCE_ROOT} )
-#	${JMSD_COMPONENT_SOURCE_ROOT_PATH} )
+	${JSD_PLATFORM_SOURCES}
+	${jsd-tpa-gtm_DEPENDENCY_DIRS}
+	${JSD_THIS_PROJECT_SOURCE_PATH} )
 list( REMOVE_DUPLICATES ${PROJECT_NAME}_DEPENDENCY_DIRS_VAR )
 include_directories( ${${PROJECT_NAME}_DEPENDENCY_DIRS_VAR} )
 
 
 ## this project headers and sources enumeration section
-foreach( directory ${tpc_google_mock_TEST_SOURCE_DIRS} )
-	list( APPEND test_header_and_source_files ${directory}/*.h* )
-	list( APPEND test_header_and_source_files ${directory}/*.c* )
+foreach( source_directory ${jsd-tpc-googletestmock_TEST_SOURCE_DIRS} )
+	include_directories( ${source_directory}/.. )
+	list( APPEND test_header_and_source_files ${source_directory}/*.h* )
+	list( APPEND test_header_and_source_files ${source_directory}/*.c* )
 endforeach()
 
 file( GLOB_RECURSE header_and_source_files
-	${JMSD_THIS_PROJECT_SOURCE_ROOT}/*.h*
-	${JMSD_THIS_PROJECT_SOURCE_ROOT}/*.c*
+	${JSD_THIS_PROJECT_SOURCE_PATH}/*.h*
+	${JSD_THIS_PROJECT_SOURCE_PATH}/*.c*
 	${test_header_and_source_files} )
 
-set( JMSD_THIS_PROJECT_FILES_TO_REMOVE
+set( JSD_THIS_PROJECT_FILES_TO_REMOVE
 	"gtest_all_test.cc"
 	"gtest-unittest-api_test.cc"
 	"gtest_assert_by_exception_test.cc"
@@ -51,6 +51,7 @@ set( JMSD_THIS_PROJECT_FILES_TO_REMOVE
 	"googletest-death-test-test.cc"
 	"googletest-env-var-test_.cc"
 	"googletest-filter-unittest_.cc"
+	"googletest-global-environment-unittest_.cc"
 	"googletest-list-tests-unittest_.cc"
 	"googletest-listener-test.cc"
 	"googletest-output-test_.cc"
@@ -69,21 +70,21 @@ set( JMSD_THIS_PROJECT_FILES_TO_REMOVE
 	"gmock-spec-builders_test.cc"
 	"gmock_output_test_.cc"
 	"gmock_stress_test.cc" )
-JMSD_REMOVE_FILES_FROM_THE_LIST( header_and_source_files JMSD_THIS_PROJECT_FILES_TO_REMOVE )
+JSD_REMOVE_FILES_FROM_THE_LIST( header_and_source_files JSD_THIS_PROJECT_FILES_TO_REMOVE )
 
 add_library( ${PROJECT_NAME} SHARED ${header_and_source_files} )
 
 
 ## definition section
 set( ${PROJECT_NAME}_BUILD_DEFINITIONS_VAR
-	${tpa_gtm_lib_LINK_DEFINITIONS}
-	-DJMSD_TPA_GTM_TEST_SHARED_INTERFACE_INTERNAL )
-JMSD_LIST_TO_STRING( ${PROJECT_NAME}_BUILD_DEFINITIONS_VAR )
-JMSD_STRING_REMOVE_DUPLICATES( ${PROJECT_NAME}_BUILD_DEFINITIONS_VAR )
+	${jsd-tpa-gtm_LINK_DEFINITIONS}
+	-DJSD_TPA_GTM_TEST_SHARED_INTERFACE_INTERNAL )
+JSD_LIST_TO_STRING( ${PROJECT_NAME}_BUILD_DEFINITIONS_VAR )
+JSD_STRING_REMOVE_DUPLICATES( ${PROJECT_NAME}_BUILD_DEFINITIONS_VAR )
 set( ${PROJECT_NAME}_LINK_DEFINITIONS_VAR
-	${tpa_gtm_lib_LINK_DEFINITIONS} )
-JMSD_LIST_TO_STRING( ${PROJECT_NAME}_LINK_DEFINITIONS_VAR )
-JMSD_STRING_REMOVE_DUPLICATES( ${PROJECT_NAME}_LINK_DEFINITIONS_VAR )
+	${jsd-tpa-gtm_LINK_DEFINITIONS} )
+JSD_LIST_TO_STRING( ${PROJECT_NAME}_LINK_DEFINITIONS_VAR )
+JSD_STRING_REMOVE_DUPLICATES( ${PROJECT_NAME}_LINK_DEFINITIONS_VAR )
 add_definitions( "${${PROJECT_NAME}_BUILD_DEFINITIONS_VAR}" )
 
 
@@ -95,12 +96,12 @@ set_target_properties( ${PROJECT_NAME} PROPERTIES SOVERSION 0.1 )
 
 ## project target section
 set( ${PROJECT_NAME}_DEPENDENCY_LIBS_VAR
-	${tpa_gtm_lib_DEPENDENCY_LIBS}
-	tpa_gtm_lib )
+	${jsd-tpa-gtm_DEPENDENCY_LIBS}
+	jsd-tpa-gtm )
 list( REMOVE_DUPLICATES ${PROJECT_NAME}_DEPENDENCY_LIBS_VAR )
 target_link_libraries( ${PROJECT_NAME} ${${PROJECT_NAME}_DEPENDENCY_LIBS_VAR} )
 
 
 ## Expose public includes to other subprojects through cache variable.
-include( ${JMSD_CMAKE_SETTINGS_PATH}/set-expose-dependencies.cmake )
-JMSD_SHOW_PROJECT_FOOTER()
+include( ${JSD_CMAKE_PATH}/set-expose-dependencies.cmake )
+JSD_SHOW_PROJECT_FOOTER()

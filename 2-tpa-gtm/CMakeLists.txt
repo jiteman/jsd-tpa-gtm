@@ -1,26 +1,26 @@
-cmake_minimum_required( VERSION 3.7.1 )
+cmake_minimum_required( VERSION 3.16.3 )
 
-project( jsd-tpa-gtm-lib C CXX )
+project( jsd-tpa-gtm C CXX )
 
 
 JSD_SHOW_PROJECT_HEADER()
 
 
 include( ${JSD_SSC_CMAKE_PATH}/tpa-gtm-lib-set-compiler-settings.cmake )
-set( JMSD_THIS_PROJECT_SOURCE_ROOT ${JSD_SSC_SOURCE_PATH}/tpa_gtm )
+set( JSD_THIS_PROJECT_SOURCE_PATH ${JSD_SSC_SOURCE_PATH}/tpa_gtm )
 
 
 ## include dependencies
 set( ${PROJECT_NAME}_DEPENDENCY_DIRS_VAR
 	${JMSD_PLATFORM_SOURCES}
 	${jsd-tpc-googletestmock_DEPENDENCY_DIRS}
-	${JMSD_THIS_PROJECT_SOURCE_ROOT} )
+	${JSD_THIS_PROJECT_SOURCE_PATH} )
 list( REMOVE_DUPLICATES ${PROJECT_NAME}_DEPENDENCY_DIRS_VAR )
 include_directories( ${${PROJECT_NAME}_DEPENDENCY_DIRS_VAR} )
 
 
 ## this project headers and sources enumeration section
-file( GLOB_RECURSE header_and_source_files ${JMSD_THIS_PROJECT_SOURCE_ROOT}/*.h* ${JMSD_THIS_PROJECT_SOURCE_ROOT}/*.c* )
+file( GLOB_RECURSE header_and_source_files ${JSD_THIS_PROJECT_SOURCE_PATH}/*.h* ${JSD_THIS_PROJECT_SOURCE_PATH}/*.c* )
 add_library( ${PROJECT_NAME} SHARED ${header_and_source_files} )
 
 
